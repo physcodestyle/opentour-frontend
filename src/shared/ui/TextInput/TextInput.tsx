@@ -1,4 +1,4 @@
-import { FC, InputHTMLAttributes } from 'react'
+import { FC, InputHTMLAttributes, useId } from 'react'
 import './TextInput.css'
 
 interface TextInputProps extends InputHTMLAttributes<HTMLInputElement> {
@@ -6,11 +6,24 @@ interface TextInputProps extends InputHTMLAttributes<HTMLInputElement> {
   error?: boolean
 }
 
-export const TextInput: FC<TextInputProps> = ({ label, error, ...props }) => {
+export const TextInput: FC<TextInputProps> = ({
+  label,
+  error,
+  id,
+  ...props
+}) => {
+  const inputId = id || useId()
+
   return (
     <div className={`input ${error ? 'input--error' : ''}`}>
-      {label && <label className='input__label'>{label}</label>}
-      <input className='input__field' {...props} />
+      {label && (
+        <label
+          htmlFor={inputId}
+          className={`input__label ${props.disabled ? 'input__label--disabled' : ''}`}>
+          {label}
+        </label>
+      )}
+      <input id={inputId} className='input__field' {...props} />
     </div>
   )
 }
