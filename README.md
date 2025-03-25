@@ -1,3 +1,5 @@
+[![Product linting](https://github.com/physcodestyle/opentour-frontend/actions/workflows/product-lint.yml/badge.svg)](https://github.com/physcodestyle/opentour-frontend/actions/workflows/product-lint.yml)
+
 # Проект Open-Tour Frontend
 
 ## Для запуска проекта локально необходимо:
