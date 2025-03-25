@@ -27,3 +27,16 @@ jobs:
               editorconfig-checker ${changed_file}
             fi
           done
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install
+      - id: files
+        uses: Ana06/get-changed-files@v2.3.0
+      - run: |
+          for changed_file in ${{ steps.files.outputs.all }}; do
+            echo "Проверка для $changed_file"
+            bunx eslint ${changed_file}
+          done
