@@ -6,7 +6,8 @@
 		"dev": "next dev",
 		"build": "next build",
 		"preview": "next start",
-		"lint": "eslint"
+		"lint:eslint": "eslint",
+		"lint:editorconfig": "editorconfig-checker"
 	},
 	"dependencies": {
 		"next": "^15.2.2",
