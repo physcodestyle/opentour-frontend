@@ -1,34 +1,34 @@
 {
-  "name": "opentour-frontend",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "preview": "next start",
-    "lint": "eslint"
-  },
-  "dependencies": {
-    "next": "^15.2.2",
-    "react": "^18",
-    "react-dom": "^18",
-    "zustand": "^5.0.3"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.23.0",
-    "@types/bun": "latest",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "9.x",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-n": "^15.0.0 || ^16.0.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-react": "^7.37.4",
-    "globals": "^16.0.0",
-    "prettier": "3.5.3",
-    "typescript": "^5",
-    "typescript-eslint": "^8.28.0"
-  }
+	"name": "opentour-frontend",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"preview": "next start",
+		"lint": "eslint"
+	},
+	"dependencies": {
+		"next": "^15.2.2",
+		"react": "^18",
+		"react-dom": "^18",
+		"zustand": "^5.0.3"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.23.0",
+		"@types/bun": "latest",
+		"@types/node": "^20",
+		"@types/react": "^18",
+		"@types/react-dom": "^18",
+		"eslint": "9.x",
+		"eslint-config-standard": "^17.1.0",
+		"eslint-plugin-import": "^2.25.2",
+		"eslint-plugin-n": "^15.0.0 || ^16.0.0",
+		"eslint-plugin-promise": "^6.0.0",
+		"eslint-plugin-react": "^7.37.4",
+		"globals": "^16.0.0",
+		"prettier": "3.5.3",
+		"typescript": "^5",
+		"typescript-eslint": "^8.28.0"
+	}
 }
