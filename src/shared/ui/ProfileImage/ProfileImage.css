@@ -1,0 +1,15 @@
+.image__container {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 1px solid hsl(var(--black-primary));
+
+  .profile__photo {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
