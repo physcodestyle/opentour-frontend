@@ -1,1 +1,1 @@
-export { SelectText } from './SelectText/SelectText'
+export { SelectInput } from './SelectInput/SelectInput'
