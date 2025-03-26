@@ -1,0 +1,60 @@
+.primary-button {
+	padding: 8px 10px 10px 10px;
+	margin: 2px;
+	height: 30px;
+	width: 61px;
+	background-color: var(--accent-color);
+	color: white;
+	transition: background-color 0.2s ease-in-out;
+	cursor: pointer;
+	border: none;
+	border-radius: 4px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 12px;
+	border-radius: 0;
+	font-family: 'YsabeauOffice Bold', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.button__wrapper {
+	padding: 2px;
+	border: 1px solid transparent;
+	width: fit-content;
+}
+
+.button__wrapper:focus-within {
+	border: 1px solid var(--accent-color);
+	transition: border 0.3s ease-in-out;
+}
+
+.primary-button--default {
+	background-color: var(--accent-color);
+	color: white;
+}
+
+.primary-button:hover {
+	background-color: #cf2929;
+	color: white;
+	cursor: pointer;
+}
+
+.primary-button:active {
+	background-color: #9f1f1f;
+	color: white;
+	transition: background-color 0.1s ease-in-out;
+}
+
+.primary-button:focus-within {
+	outline: none;
+}
+
+.primary-button:disabled {
+	padding: 4px;
+	background-color: hsl(var(--grey-primary));
+	color: #eeeeee;
+}
