@@ -8,7 +8,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 export const PrimaryButton: FC<ButtonProps> = ({ ...props }) => {
 	return (
 		<div className={'button__wrapper'}>
-			<button className={`primary-button `} {...props}>
+			<button className='primary-button' {...props}>
 				Caption
 			</button>
 		</div>
