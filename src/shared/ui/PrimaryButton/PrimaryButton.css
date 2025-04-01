@@ -4,7 +4,7 @@
 	height: 30px;
 	width: 61px;
 	background-color: var(--accent-color);
-	color: white;
+	color: hsl(var(--white-primary));
 	transition: background-color 0.2s ease-in-out;
 	cursor: pointer;
 	border: none;
@@ -29,18 +29,18 @@
 
 .primary-button--default {
 	background-color: var(--accent-color);
-	color: white;
+	color: hsl(var(--white-primary));
 }
 
 .primary-button:hover {
 	background-color: #cf2929;
-	color: white;
+	color: hsl(var(--white-primary));
 	cursor: pointer;
 }
 
 .primary-button:active {
 	background-color: #9f1f1f;
-	color: white;
+	color: hsl(var(--white-primary));
 	transition: background-color 0.1s ease-in-out;
 }
 
@@ -51,5 +51,5 @@
 .primary-button:disabled {
 	padding: 4px;
 	background-color: hsl(var(--grey-primary));
-	color: #eeeeee;
+	color: hsl(var(--white-primary));
 }
