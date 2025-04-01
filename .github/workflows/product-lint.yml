@@ -1,0 +1,42 @@
+name: Product linting
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  editorconfig:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install --global editorconfig-checker
+      - id: files
+        uses: Ana06/get-changed-files@v2.3.0
+      - run: |
+          config=.editorconfig
+          for changed_file in ${{ steps.files.outputs.all }}; do
+            if [ $changed_file == $config ]; then
+              echo "Проверка всех файлов в репозитории"
+              editorconfig-checker
+              break
+            else
+              echo "Проверка для $changed_file"
+              editorconfig-checker ${changed_file}
+            fi
+          done
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install
+      - id: files
+        uses: Ana06/get-changed-files@v2.3.0
+      - run: |
+          for changed_file in ${{ steps.files.outputs.all }}; do
+            echo "Проверка для $changed_file"
+            bunx eslint ${changed_file}
+          done
