@@ -1,16 +1,16 @@
-import { ButtonHTMLAttributes, FC } from "react";
-import "./RegularButton.css";
+import { ButtonHTMLAttributes, FC } from 'react'
+import './RegularButton.css'
 
 interface RegularButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  state?: "default" | "focus" | "hover" | "pressed" | "disabled";
+	text: string
 }
 
-export const RegularButton: FC<RegularButtonProps> = ({ ...props }) => {
-  return (
-    <div className="button__wrapper">
-      <button className="button__element" {...props}>
-        Caption
-      </button>
-    </div>
-  );
-};
+export const RegularButton: FC<RegularButtonProps> = ({ text, ...props }) => {
+	return (
+		<div className='button__wrapper'>
+			<button className='button__element' {...props}>
+				{text}
+			</button>
+		</div>
+	)
+}
