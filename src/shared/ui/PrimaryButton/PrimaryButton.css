@@ -33,13 +33,13 @@
 }
 
 .primary-button:hover {
-	background-color: #cf2929;
+	background-color: hsl(var(--primary-secondary));
 	color: hsl(var(--white-primary));
 	cursor: pointer;
 }
 
 .primary-button:active {
-	background-color: #9f1f1f;
+	background-color: hsl(var(--accent-dark));
 	color: hsl(var(--white-primary));
 	transition: background-color 0.1s ease-in-out;
 }
