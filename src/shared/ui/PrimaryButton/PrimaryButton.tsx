@@ -2,14 +2,14 @@ import { ButtonHTMLAttributes, FC } from 'react'
 import './PrimaryButton.css'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-	state?: 'default' | 'hover' | 'pressed' | 'focused' | 'disabled'
+	text: string
 }
 
-export const PrimaryButton: FC<ButtonProps> = ({ ...props }) => {
+export const PrimaryButton: FC<ButtonProps> = ({ text, ...props }) => {
 	return (
 		<div className={'button__wrapper'}>
 			<button className='primary-button' {...props}>
-				Caption
+				{text}
 			</button>
 		</div>
 	)
