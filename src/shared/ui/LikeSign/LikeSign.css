@@ -1,0 +1,13 @@
+.like-sign__wrapper {
+	border: 1px solid hsl(var(--black-primary));
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.like-sign__wrapper:hover {
+	cursor: pointer;
+}
