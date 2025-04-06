@@ -1,5 +1,5 @@
 .like-sign__wrapper {
-	border: 1px solid black;
+	border: 1px solid hsl(var(--black-primary));
 	border-radius: 50%;
 	width: 24px;
 	height: 24px;
