@@ -1,0 +1,6 @@
+.rating__wrapper {
+	font-family: 'YsabeauOffice Bold', sans-serif;
+	display: flex;
+	align-items: center;
+	width: fit-content;
+}
