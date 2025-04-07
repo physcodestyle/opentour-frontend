@@ -1,8 +1,7 @@
 .primary-button {
 	padding: 8px 10px 10px 10px;
-	margin: 2px;
 	height: 30px;
-	width: 61px;
+	min-width: 61px;
 	background-color: var(--accent-color);
 	color: hsl(var(--white-primary));
 	transition: background-color 0.2s ease-in-out;
@@ -13,23 +12,17 @@
 	justify-content: center;
 	font-size: 12px;
 	font-family: 'YsabeauOffice Bold', sans-serif;
-	font-optical-sizing: auto;
 }
 
 .button__wrapper {
-	padding: 2px;
+	padding: 4px;
 	border: 1px solid transparent;
 	width: fit-content;
 }
 
 .button__wrapper:focus-within {
 	border: 1px solid var(--accent-color);
-	transition: border 0.3s ease-in-out;
-}
-
-.primary-button--default {
-	background-color: var(--accent-color);
-	color: hsl(var(--white-primary));
+	transition: border-color 0.3s ease-in-out;
 }
 
 .primary-button:hover {
@@ -49,6 +42,7 @@
 }
 
 .primary-button:disabled {
+	cursor: default;
 	padding: 4px;
 	background-color: hsl(var(--grey-primary));
 	color: hsl(var(--white-primary));
