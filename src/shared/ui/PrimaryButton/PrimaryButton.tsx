@@ -1,5 +1,6 @@
-import { ButtonHTMLAttributes, FC } from 'react'
-import './PrimaryButton.css'
+import { ButtonHTMLAttributes, FC } from 'react';
+import './PrimaryButton.css';
+
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 	text: string
@@ -12,7 +13,7 @@ export const PrimaryButton: FC<ButtonProps> = ({ text, ...props }) => {
 				{text}
 			</button>
 		</div>
-	)
-}
+	);
+};
 
-export default PrimaryButton
+export default PrimaryButton;
