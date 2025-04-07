@@ -1,0 +1,10 @@
+.langElem__wrapper {
+	font-family: 'YsabeauOffice Bold', sans-serif;
+	border: 1px solid hsl(var(--black-primary));
+	border-radius: 50%;
+	align-content: center;
+	text-align: center;
+	font-size: 12px;
+	width: 24px;
+	height: 24px;
+}
