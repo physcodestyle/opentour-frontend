@@ -1,10 +1,24 @@
-import './Radio.css'
+import './RadioInput.css'
+import { FC, InputHTMLAttributes } from 'react'
 
-export const RadioInput = () => {
+interface RadioInputProps extends InputHTMLAttributes<HTMLInputElement> {
+  label: string
+}
+
+export const RadioInput: FC<RadioInputProps> = ({ label, id, ...props }) => {
+  const inputId = id || 'radioInputId'
+
   return (
-    <div>
-      <input type='radio' id='huey' name='drone' value='huey' checked />
-      <label htmlFor='huey'>Huey</label>
+    <div className='inputRadio'>
+      <input
+        className='inputRadio__field'
+        type='radio'
+        id={inputId}
+        {...props}
+      />
+      <label className='inputRadio__label' htmlFor={inputId}>
+        {label}
+      </label>
     </div>
   )
 }
