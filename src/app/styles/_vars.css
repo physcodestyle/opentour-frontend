@@ -1,6 +1,9 @@
 :root {
 	/* Основные цвета */
 	--black-primary: 0 0% 0%;
+	--grey-primary: 0, 0%, 67%;
+	--grey-secondary: 0 0% 53%;
+	--grey-light: 0, 0%, 96%;
 	--orange-primary: 30 100%, 65%;
 	--orange-light: 22 100% 80%;
 	--pink-primary: 334 61% 50%;
@@ -9,6 +12,12 @@
 	--blue-light: 210 54% 63%;
 	--green-dark: 181 61% 39%;
 	--green-light: 168 49% 58%;
+	--white-primary: 0, 0%, 100%;
+	--primary-secondary: 0, 67%, 49%;
+	--accent-dark: 0, 67%, 37%;
+	--colorless-regular: 0, 0%, 0%, 0;
+
+	--accent-color: hsl(0, 90%, 57%);
 
 	/* альфа прозрачности */
 	--alpha-1: 10%;

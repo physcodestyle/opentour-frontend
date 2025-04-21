@@ -1,0 +1,53 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 4px;
+  border: 1px solid transparent;
+  transition: border-color 0.15s;
+  width: 100%;
+}
+
+.input__label {
+  font-family: 'YsabeauOffice Regular', sans-serif;
+  font-size: 12px;
+}
+
+.input__label--disabled {
+  color: hsl(var(--grey-secondary));
+}
+
+.input__field {
+  font-family: 'YsabeauOffice Bold', sans-serif;
+  padding: 8px 10px 10px;
+  border: 1px solid hsla(var(--black-primary));
+  font-size: 12px;
+}
+
+input::placeholder {
+  color: hsl(var(--grey-light));
+}
+
+.input:focus-within {
+  border: 1px solid;
+}
+
+.input--error .input__field {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.input:focus-within .input__field {
+  color: hsl(var(--black-primary));
+  outline: none;
+}
+
+.input__field:disabled {
+  background: hsl(var(--grey-light));
+  border-color: hsl(var(--grey-primary));
+  color: hsl(var(--grey-primary));
+}
+
+.input__field:hover {
+  border-color: hsl(var(--grey-secondary));
+}
