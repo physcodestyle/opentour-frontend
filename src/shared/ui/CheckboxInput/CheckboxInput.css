@@ -1,0 +1,72 @@
+.inputCheckbox__field {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 14px;
+  height: 14px;
+  border: 1.5px solid currentColor;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputCheckbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 120ms color;
+  width: fit-content;
+  margin-left: 5px;
+  padding: 5px 7px 5px 5px;
+}
+
+.inputCheckbox:focus-within {
+  outline: 1px solid;
+}
+
+.inputCheckbox__field::before {
+  content: url('/icons/custom-icons/checkbox-input/check.svg');
+  width: 10px;
+  height: 10px;
+  transform: scale(0);
+  transition: 120ms transform;
+  filter: currentColor;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputCheckbox__field:focus-visible {
+  outline: none;
+}
+
+.inputCheckbox:hover,
+.inputCheckbox:hover .inputCheckbox__label {
+  color: hsl(0, 0%, 67%);
+}
+
+.inputCheckbox:hover .inputCheckbox__field::before {
+  filter: brightness(0) saturate(100%) invert(74%) sepia(0%) saturate(1%)
+    hue-rotate(152deg) brightness(90%) contrast(86%);
+}
+.inputCheckbox__field:checked::before {
+  transform: scale(1);
+}
+
+.inputCheckbox__field:disabled {
+  color: hsl(0, 0%, 67%);
+}
+
+.inputCheckbox__field:disabled::before {
+  /* box-shadow: inset 1em 1em hsl(0, 0%, 67%);  */
+  filter: brightness(0) saturate(100%) invert(74%) sepia(0%) saturate(1%)
+    hue-rotate(152deg) brightness(90%) contrast(86%);
+}
+
+.inputCheckbox__field:disabled + .inputCheckbox__label {
+  color: hsl(0, 0%, 67%);
+}
