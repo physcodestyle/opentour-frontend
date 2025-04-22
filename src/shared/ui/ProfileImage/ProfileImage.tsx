@@ -1,31 +1,21 @@
 import Image from 'next/image'
 import './ProfileImage.css'
+import { FC } from 'react'
 
-/* запрос на получение фото
-const imagePhoto = require('') */
+interface IPhoto {
+  photo: string | null
+}
 
-const imagePhoto = ''
-
-export function ProfileImage() {
+export const ProfileImag: FC<IPhoto> = ({ photo }) => {
   return (
     <div className='image__container'>
-      {imagePhoto ? (
-        <Image
-          src={imagePhoto}
-          width={86}
-          height={86}
-          alt='фото профиля'
-          className='profile__photo'
-        />
-      ) : (
-        <Image
-          src='/icons/group-count/single.svg'
-          height={90}
-          width={90}
-          alt='Иконка'
-          className='icon__photo'
-        />
-      )}
+      <Image
+        src={photo ?? '/icons/group-count/single.svg'}
+        width={86}
+        height={86}
+        alt='фото профиля'
+        className='profile__photo'
+      />
     </div>
   )
 }
