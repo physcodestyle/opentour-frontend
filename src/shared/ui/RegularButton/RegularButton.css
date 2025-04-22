@@ -1,0 +1,52 @@
+.button__wrapper {
+  padding: 4px;
+  border: 1px solid transparent;
+  width: fit-content;
+}
+
+.button__wrapper:focus-within {
+  border: 1px solid hsl(0, 90%, 57%);
+}
+.button__wrapper:active {
+  border: 1px solid transparent;
+}
+
+.button__wrapper:disabled {
+  border: 1px solid transparent;
+}
+.button__element {
+  font-family: "Ysabeau Office", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid hsl(0, 90%, 57%);
+  border-radius: 0;
+  padding: 8px 10px 10px;
+  color: hsl(0, 90%, 57%);
+  background-color: rgba(255, 255, 255, 0);
+  height: 30px;
+  width: 61px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button__element:focus {
+  outline: none;
+}
+
+.button__element:hover {
+  cursor: pointer;
+  color: #cf2929;
+  border: 1px solid #cf2929;
+}
+
+.button__element:active {
+  color: #9f1f1f;
+  border: 1px solid #9f1f1f;
+}
+
+.button__element:disabled {
+  cursor: default;
+  color: hsl(0, 0%, 59%);
+  border: 1px solid hsl(0, 0%, 59%);
+}
